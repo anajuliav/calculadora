@@ -9,21 +9,26 @@
 
       <h3>Informe os dois números:</h3>
       <div>
-         1 Número: <input> 
+         1 Número: <input id="num1"> 
          <br>
          2 Número: <input>
       </div>
 
       <h3>Escolha a operação:</h3>
       <div>
-         <button>SOMA</button>
+         <button onclick="SOMAR()">SOMA</button>
          <button>SUBTRAI</button>
          
          <h3>Resultado</h3>
          <p>(resultado)</p>
       </div>
       <script>
-         
+        
+         function SOMAR() {
+          var n1= document.getElementById("num1").value;
+          console.log(n1);
+         }
+
       </script>
    </body>
 </html>
