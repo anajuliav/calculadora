@@ -11,23 +11,49 @@
       <div>
          1 Número: <input id="num1"> 
          <br>
-         2 Número: <input>
+         2 Número: <input id="num2" >
       </div>
 
       <h3>Escolha a operação:</h3>
       <div>
          <button onclick="SOMAR()">SOMA</button>
-         <button>SUBTRAI</button>
+         <button onclick="SUBTRAIR()">SUBTRAI</button>
          
          <h3>Resultado</h3>
-         <p>(resultado)</p>
+         <p id="result">(resultado)</p>
       </div>
       <script>
         
          function SOMAR() {
-          var n1= document.getElementById("num1").value;
+          var n1= parseInt(document.getElementById("num1").value);
+          var n2= parseInt(document.getElementById("num2").value);
+          var resultado= n1 + n2;
+
+          document.getElementById("result").innerHTML= resultado;
+         
+
           console.log(n1);
+          console.log(n2);
+          console.log(resultado);
+          
+       
          }
+    
+         function SUBTRAIR() {
+
+          var n1= parseInt(document.getElementById("num1").value);
+          var n2= parseInt(document.getElementById("num2").value);
+          var resultado= n1 - n2;
+
+          document.getElementById("result").innerHTML= resultado;
+
+          console.log (n1);
+          console.log(n2);
+          console.log(resultado);
+
+         }
+ 
+        
 
       </script>
    </body>
